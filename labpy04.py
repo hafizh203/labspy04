@@ -50,7 +50,7 @@ for i in range(len(nama)):
     for n in range(5-len(str(uas[i]))):
         print(" ",end="")
         
-    akhir = round((tugas[i]+uts[i]+uas[i])/3, 2)
+    akhir = round((float(tugas[i]*0.3)+float(uts[i]*0.35)+float(uas[i]*0.35)),2)
     print("|  "+str(akhir),end="")
     for o in range(6-len(str(akhir))):
         print(" ",end="")
